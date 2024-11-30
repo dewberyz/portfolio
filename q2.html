@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>my e-portfolio!</title>
+<link rel="stylesheet" href="q2.css">
+</head>
+<body>
+
+<section class="home" id="home">
+<div class="circle"></div>
+<header>
+<a href="#"><img src="C:\Users\acer\Downloads\logo (1).jpg" class="logo"></a>
+<ul>
+<li><a href="dewberyz.html">Home</a></li>
+<li><a href="q1.html">First Quarter</a></li>
+<li><a href="q2.html">Second Quarter</a></li>
+<li><a href="q3.html">Third Quarter</a></li>
+<li><a href="q4.html">Fourth Quarter</a></li>
+</ul>
+</header>
+</section>
+
+<section class="activities" id="activities">
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="item" style="background-image: url(https://tinyurl.com/52vrs37k);">
+                <div class="content">
+                    <div class="name">VPOP Practice</div>
+                    <div class="des">As the month of December approaches, our class has been very very tired from the vpop practices. We thank all the teachers for giving us time to practice our songs and choreography!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            
+            <div class="item" style="background-image: url(https://tinyurl.com/52fa2v4y);">
+                <div class="content">
+                    <div class="name">Activities of 9-Family</div>
+                    <div class="des">In this section, you will be able to see the activities that our section, 9-Family, did during the 2nd quarter of school year 2024-2025.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/pe5rxvjb);">
+                <div class="content">
+                    <div class="name">Historical Icons</div>
+                    <div class="des">After weeks if tiring sewing, painting, and cutting, the costume has been modelled in the multipurpose court. I am truly grateful for my classmates for trusting me to represent our class. Rosa Parks is an icon!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/mvh7xv2h);">
+                <div class="content">
+                    <div class="name">Teachers' Day</div>
+                    <div class="des">​On Teacher's Day, our class celebrated by dressing up as minions, bringing a vibrant and cheerful atmosphere to the school.​ The event not only highlighted the joy of learning but also fostered a sense of community and camaraderie among the students and staff, making it a memorable Teacher's Day celebration.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://tinyurl.com/4zrkbwp6);">
+                <div class="content">
+                    <div class="name">Book Parade</div>
+                    <div class="des">The book parade occured to celebrate the love for our favorite book characters. Everyone looked amazing!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+
+    </div>
+
+</section>
+<script>
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+let items = document.querySelectorAll('.item')
+document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+})
+</script>
+
+<section class="lessons" id="lessons">
+<div class="content2">
+<div class="textBox2">
+<h2>Lessons in<br><span>2nd Quarter</span></h2>
+</div>
+<div class="lesson">
+
+<ol>
+<li><b>CSS</b></li>
+<ul>
+<li>Cascading Style Sheet</li>
+<li>Describes how HTML elements are to be displayed on media</li>
+<li>Has 3 layers: presentation, content, and behavior</li>
+<li>Has 3 methods: inline, embedded, and linked</li>
+<li><b> inline method:</b> CSS is stored directly in the style attributes of the HTML tags</li>
+<li><b> embedded method:</b> placed within the head part of the HTML file</li>
+<li><b> linked method:</b> made outside the html file</li>
+<li> sample code: <br><img src="https://tinyurl.com/bdsnf82n" alt="embedded style" height="230"></li>
+<li> browser output: <a href="embeddedex.html">click here</a></li>
+</ul><br>
+
+<li><b>CSS Selectors</b></li>
+<ul>
+<li>states which element in the HTML you want to style/part of the statement which identifies page elements</li>
+<li><b>element selectors:</b> selects HTML elements (p, div, h1, etc) and applies CSS to them</li>
+<li><b>id selectors:</b> selects the HTML element with a unique identifier (id) and adds CSS to it</li>
+<li><b>class selectors:</b> selects the HTML element using the class attribute and applies CSS to it</li>
+<li><b>universal selectors:</b> selects every single HTML element on the page. It is written using the asterisk ( * ) character</li>
+<li><b>group selectors:</b> allows you to select multiple elements and apply the same style to all of them.</li>
+<li><b>attribute selectors:</b> selects elements based on specific attribute values</li>
+<li> sample code: <br><img src="https://tinyurl.com/4xmpm84y" alt="id selector" height="230"></li>
+<li> browser output: <a href="selectors.html">click here</a></li>
+</ul><br>
+
+<li><b>Formatting Layout</b></li>
+<ul>
+<li><b>box model:</b> it is where each element on a page exists on its own box wherein each box aligns with other boxes on the page</li>
+<li><b>offset:</b> Allows you to set up the distance of the specified element from another element</li>
+<li><b>float:</b> Allow you to control where a specified block element will be located or placed on the page and where the other elements will be positioned in relation to the said block</li>
+<li> sample code: <br><img src="https://tinyurl.com/49kucjjr" alt="id selector" height="230"></li>
+<li> browser output: <a href="float.html">click here</a></li>
+</ul><br>
+</ol>
+</div>
+</section>
+
+<section id="reflection">
+
+
+<div class="content3">
+<div class="textBox3">
+<h2>Reflection</h2>
+<p>During the second quarter, I learned a lot about Cascading Style Sheets (CSS) and how it helps make websites look better. CSS is a language we use to style HTML elements, which means it tells the website how things should look. By using external stylesheets, I can keep the design separate from the content. This makes it easier to update and change the look of a page without affecting the text or pictures. I also learned that there are three main parts to a webpage: the content (HTML), the presentation (CSS), and the behavior (JavaScript).<br><br>
+
+I explored different parts of CSS, like selectors and properties that help control how elements are shown on a webpage. I now understand the differences between inline styles, embedded styles, and linked styles. Each one has its own benefits for styling. I learned how to use selectors to choose specific parts of an HTML page to style, like using element selectors, class selectors, and ID selectors. Understanding how styles "cascade" helps me fix problems when different styles affect the same elements.<br><br>
+
+Finally, we talked about how to use the box model and control the layout of the webpage. I learned about properties for displaying elements and how to position them exactly where I want. We also covered pseudo-classes, which allow me to change the style of an element when someone interacts with it, like when they hover over a link. ​Overall, this quarter was really helpful, and I feel like I have a strong understanding of CSS that I can use for web development in the future.
+
+</p>
+
